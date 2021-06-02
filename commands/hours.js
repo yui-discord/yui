@@ -1,10 +1,10 @@
 module.exports = {
 	name: "hours",
-	description: "Bom dia",
+	description: "Que horas são?",
 	execute(message, args) {
 		const date = new Date();
 		message.channel.send(
-			`Agora são ${date.getHours()} hora(s) e ${date.getMinutes()} minuto(s)`
+			`Agora são **${date.getHours()}**:**${date.getMinutes()}**`
 		);
 	},
 };
