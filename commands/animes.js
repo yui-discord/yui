@@ -30,7 +30,7 @@ module.exports = {
       .setThumbnail(
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt--xxLDmNJvEOrZebebE8Tovv7lCKCrJ12brysC0XwCXdSnLfhI61XehJbHEjuvhVbDY&usqp=CAU"
       )
-      .setDescription(animes.join(`\n> • `))
+      .setDescription(animes.join(`\n • `))
       .setImage("https://media.giphy.com/media/WQr5l1Ye0Pj5Zf40El/giphy.gif")
       .setTimestamp()
       .setFooter(
