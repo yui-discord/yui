@@ -1,15 +1,11 @@
 const axios = require("axios");
 
-module.exports = {
-	name: "dolar",
-	description: "Quanto está a cotação do dolar para reais agora?",
-	async execute(message, args) {
-		const response = await axios({
-			method: "GET",
-			url: "https://economia.awesomeapi.com.br/last/USD-BRL",
-		});
-		console.log(response.data.USDBRL);
-		message.channel.send(`
+async function dolar(message) {
+  const response = await axios({
+    method: "GET",
+    url: "https://economia.awesomeapi.com.br/last/USD-BRL",
+  });
+  message.channel.send(`
 
 			**${response.data.USDBRL.name}**
 			> **Compra:** ${response.data.USDBRL.bid}
@@ -20,5 +16,6 @@ module.exports = {
 			> **Mínimo:** ${response.data.USDBRL.low}
 
 		`);
-	},
-};
+}
+
+module.exports = dolar;

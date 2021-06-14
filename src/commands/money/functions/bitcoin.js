@@ -1,15 +1,11 @@
 const axios = require("axios");
 
-module.exports = {
-	name: "bitcoin",
-	description: "Quanto está a cotação do bitcoin para reais agora?",
-	async execute(message, args) {
-		const response = await axios({
-			method: "GET",
-			url: "https://economia.awesomeapi.com.br/last/BTC-BRL",
-		});
-		console.log(response.data.BTCBRL);
-		message.channel.send(`
+async function bitcoin(message) {
+  const response = await axios({
+    method: "GET",
+    url: "https://economia.awesomeapi.com.br/last/BTC-BRL",
+  });
+  message.channel.send(`
 
 			**${response.data.BTCBRL.name}**
 			> **Compra:** ${response.data.BTCBRL.bid}
@@ -20,5 +16,6 @@ module.exports = {
 			> **Mínimo:** ${response.data.BTCBRL.low}
 
 		`);
-	},
-};
+}
+
+module.exports = bitcoin;

@@ -1,15 +1,11 @@
 const axios = require("axios");
 
-module.exports = {
-	name: "euro",
-	description: "Quanto está a cotação do euro para reais agora?",
-	async execute(message, args) {
-		const response = await axios({
-			method: "GET",
-			url: "https://economia.awesomeapi.com.br/last/EUR-BRL",
-		});
-		console.log(response.data.EURBRL);
-		message.channel.send(`
+async function euro(message) {
+  const response = await axios({
+    method: "GET",
+    url: "https://economia.awesomeapi.com.br/last/EUR-BRL",
+  });
+  message.channel.send(`
 
 			**${response.data.EURBRL.name}**
 			> **Compra:** ${response.data.EURBRL.bid}
@@ -20,5 +16,6 @@ module.exports = {
 			> **Mínimo:** ${response.data.EURBRL.low}
 
 		`);
-	},
-};
+}
+
+module.exports = euro;
