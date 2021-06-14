@@ -6,4 +6,4 @@
 - <a href="https://youtu.be/2qOXf5u6SiM">Meme command</a>
 - <a href="https://youtu.be/2qOXf5u6SiM">API Memes</a>
 - <a href="https://discordjs.guide/popular-topics/faq.html#how-do-i-play-music-from-youtube">Play music from youtube</a>
-- <a href="https://stackoverflow.com/questions/60925319/i-am-getting-this-error-ffmpeg-avconv-not-found">Error: FFmpeg/avconv not found!npm i @discordjs/opus</a>
+- <a href="https://stackoverflow.com/questions/60925319/i-am-getting-this-error-ffmpeg-avconv-not-found">Error: FFmpeg/avconv not found!</a>
