@@ -1,8 +1,8 @@
-const Discord = require('discord.js');
-const { readdirSync } = require('fs');
+const Discord = require("discord.js");
+const { readdirSync } = require("fs");
 
 module.exports = (commandsDirectory, client) => {
-  console.log('> Carregando comandos...');
+  console.log("> Carregando comandos... 🤠");
 
   client.commands = new Discord.Collection();
 
@@ -13,9 +13,11 @@ module.exports = (commandsDirectory, client) => {
       const command = require(`${commandsDirectory}/${commandFolder}/main.js`);
       client.commands.set(command.name, command);
     }
-    console.log(`> ${client.commands.size} comandos carregados com sucesso.`);
+    console.log(
+      `> ${client.commands.size} comandos carregados com sucesso. 👾`
+    );
   } catch (err) {
     console.error(err);
-    throw new Error('Houve uma falha ao carregar os comandos!');
+    throw new Error("Houve uma falha ao carregar os comandos! 😢");
   }
 };

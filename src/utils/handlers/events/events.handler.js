@@ -1,8 +1,8 @@
-const { readdirSync } = require('fs');
-const { parse } = require('path');
+const { readdirSync } = require("fs");
+const { parse } = require("path");
 
 module.exports = async (eventsDirectory, client) => {
-  console.log('> Carregando eventos...');
+  console.log("> Carregando eventos... 🐢");
 
   const eventFiles = readdirSync(eventsDirectory);
 
@@ -11,5 +11,5 @@ module.exports = async (eventsDirectory, client) => {
     const event = require(`${eventsDirectory}/${file}`);
     client.on(eventName, event.bind(null, client));
   }
-  console.log(`> ${eventFiles.length} eventos carregados com sucesso.`);
+  console.log(`> ${eventFiles.length} eventos carregados com sucesso. 🔍`);
 };
