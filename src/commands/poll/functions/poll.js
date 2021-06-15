@@ -1,6 +1,8 @@
 const Discord = require("discord.js");
 
 const poll = (message, args) => {
+  message.channel.bulkDelete(1);
+
   const channel = message.client.channels.cache.find(
     (channel) => channel.id == "791686556581756969"
   );
@@ -10,6 +12,7 @@ const poll = (message, args) => {
     .setColor("#fdd092")
     .setDescription(args.join(" "))
     .setTimestamp();
+
   channel.send({ embed: messageEmbed }).then((embedMessage) => {
     embedMessage.react("⬆");
     embedMessage.react("⬇");

@@ -1,5 +1,7 @@
+require("dotenv").config();
+
 function execute(message) {
-  if (message.author.username === "miguelrisquelme") {
+  if (message.author.username === process.env.OWNER_USERNAME) {
     message.channel
       .bulkDelete(100, true)
       .then((messages) =>
