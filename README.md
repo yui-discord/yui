@@ -1,25 +1,43 @@
 <p align="center"><img src=".github/app.gif" width="350px" height="350px" style="border-radius: 50%; object-fit: cover;"/></p>
 <h1 align="center">Yui</h1>
 
-## Fluxo da aplicação
+<p align="justify" style="width: 550px; margin: 0 auto">
+Quase como uma filha, é um bot de propósitos gerais, chamada de Yui estou a desenvolvendo para o discord com a biblioteca discord.js, o nome tem inspiração na personagem Yui do anime Sword Art Online que a princípio é uma I.A.</p>
 
-### Diretórios
+## **Fluxo da aplicação**
+
+<br/>
+
+### **Diretórios**
+
+<br/>
 
 #### /commands
 
 - Diretório onde se encontra todos os comandos do bot
+- Cada comando fica em uma pasta com o seu nome
+- Dentro de cada pasta tem
+  - main.js - Configurações do comando
+  - /functions - Dentro dessa pasta fica os subcomandos assim dizer
 
 #### /events
 
 - Diretório onde se encontra todos os eventos do bot
+- Tudo que vai ser executado como ação fica aqui
 
 #### /handlers
 
 - Onde será manipulado os dados
+- É criado handlers para manipular tipos de dados
+  - Eventos
+  - Erros
+  - Comandos
 
-<br/><br/><br/>
+<br/>
 
-### Important Files
+### **Important Files**
+
+<br/>
 
 #### index.js
 
@@ -34,9 +52,21 @@
 
 #### events.handler.js
 
+- Manipula os eventos
+- Fala quando o o bot foi iniciado por completo
+- Ouve o evento message
+
 #### error.handler.js
 
+- Manipula os erros
+- Diz os tipos de erros
+
 #### message.js
+
+- Verifica quem está chamando o comando, caso seja o OWNER_ID irá atribuir o nome definido no arquivo `.env`
+- Faz o tratamento do evento acionado
+- Faz as verificações
+- Executa o comando
 
 #### ready.js
 
@@ -45,7 +75,7 @@
 
 <br/><br/><br/>
 
-## References
+## **References**
 
 - <a target="_blank" href="https://discordjs.guide/">Discord.js Documentation</a>
 - <a target="_blank" href="https://discordjs.guide/command-handling/#individual-command-files">How to organize your commands</a>
