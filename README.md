@@ -1,76 +1,74 @@
 <p align="center"><img src=".github/app.gif" /></p>
-<h1 align="center">Yui</h1>
+<p align="center"><h1 align="center" >Yui</h1></p>
+<p align="center"><a href="./README-ptBR.md">Versão em português</a></p>
 
 <p align="justify">
-Quase como uma filha, é um bot de propósitos gerais, chamada de Yui estou a desenvolvendo para o discord com a biblioteca discord.js, o nome tem inspiração na personagem Yui do anime Sword Art Online que a princípio é uma I.A.</p>
+Almost like a daughter, it's a general purpose bot, called Yui I'm developing for discord with discord.js library, the name is inspired by the character Yui from the anime Sword Art Online, which at first is an A.I.</p>
 
 <br/>
 
-## **Fluxo da aplicação**
+## **Application flow**
 
-
-### **Diretórios**
-
+### **Directories**
 
 #### /commands
 
-- Diretório onde se encontra todos os comandos do bot
-- Cada comando fica em uma pasta com o seu nome
-- Dentro de cada pasta tem
-  - main.js - Configurações do comando
-  - /functions - Dentro dessa pasta fica os subcomandos assim dizer
+- Directory where all bot commands are found
+- Each command is in a folder with its name
+- Inside each folder has
+  - main.js - Command settings
+  - /functions - Inside this folder are the subcommands so to speak
 
 #### /events
 
-- Diretório onde se encontra todos os eventos do bot
-- Tudo que vai ser executado como ação fica aqui
+- Directory where all bot events are found
+- Everything that will be executed as an action is here
 
 #### /handlers
 
-- Onde será manipulado os dados
-- É criado handlers para manipular tipos de dados
-  - Eventos
-  - Erros
-  - Comandos
+- Where will the data be manipulated
+- Handlers are created to manipulate data types
+  - Events
+  - Errors
+  - Commands
 
 <br/>
 
 ### **Important Files**
 
-
 #### index.js
 
-- Função anônima
-- Listar os comandos
-- Executa os handlers enviando o diretório dos events
+- Anonymous function
+- List the commands
+- Execute the handlers by sending the events directory
 
 #### commands.handler.js
 
-- Lista os comandos
-- Adiciona eles ao client que é a instância do BOT
+- List the commands
+- Add them to the client which is the BOT instance
 
 #### events.handler.js
 
-- Manipula os eventos
-- Fala quando o o bot foi iniciado por completo
-- Ouve o evento message
+- Handle the events
+- Speak when the bot has fully started
+- Listen to the event message
 
 #### error.handler.js
 
-- Manipula os erros
-- Diz os tipos de erros
+- Handle errors
+- Say the types of errors
 
 #### message.js
 
-- Verifica quem está chamando o comando, caso seja o OWNER_ID irá atribuir o nome definido no arquivo `.env`
-- Faz o tratamento do evento acionado
-- Faz as verificações
-- Executa o comando
+- Check who is calling the command, if it is the OWNER_ID it will assign the name defined in the `.env` file
+- Handles the triggered event
+- Do the checks
+- Execute the command
 
 #### ready.js
 
-- Mostra em quantos server o bot está conectado
-- Fala que a aplicação já está rodando
+- Shows how many servers the bot is connected to
+- Says the application is already running
 
 <br/><br/><br/>
 
