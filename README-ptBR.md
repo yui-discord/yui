@@ -7,7 +7,38 @@ Quase como uma filha, é um bot de propósitos gerais, chamada de Yui estou a de
 
 <br/>
 
-## **Fluxo da aplicação**
+## 🤔 **Como usar no meu servidor?**
+
+❗❗❗ O bot ainda não foi hospedado então ninguém pode usar, apenas localmente
+
+- Adicione o bot clicando nesse <a href="https://discordapp.com/oauth2/authorize?=&client_id=849235155440238592&scope=bot&permissions=8">LINK</a>
+  - Você precisa de permissões de administrador em algum server
+- Leia a documentação dos comandos <a href="#">AQUI</a>
+- Só curtir 😁
+
+<br/>
+
+## 🧩 **Rodando localmente**
+
+_Antes de tudo você precisa ter adicionado o bot no seu servidor, para isso clique nesse <a href="https://discordapp.com/oauth2/authorize?=&client_id=849235155440238592&scope=bot&permissions=8">link</a>_
+
+```
+// Clone o repositório
+$ git clone https://github.com/miguelrisquelme/yui.git
+
+// Instale as dependências
+$ npm i
+
+// Crie e configure o arquivo .env, basta seguir o arquivo de exemplo .env.example
+~/.env
+
+// Inicie a aplicação
+$ npm run dev
+```
+
+<br/>
+
+## 🧬 **Fluxo da aplicação**
 
 ### **Diretórios**
 
@@ -72,7 +103,7 @@ Quase como uma filha, é um bot de propósitos gerais, chamada de Yui estou a de
 
 <br/><br/><br/>
 
-## **References**
+## 📚 **References**
 
 - <a target="_blank" href="https://discordjs.guide/">Discord.js Documentation</a>
 - <a target="_blank" href="https://discordjs.guide/command-handling/#individual-command-files">How to organize your commands</a>
