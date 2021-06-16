@@ -8,11 +8,9 @@ Quase como uma filha, é um bot de propósitos gerais, chamada de Yui estou a de
 
 ## **Fluxo da aplicação**
 
-<br/>
 
 ### **Diretórios**
 
-<br/>
 
 #### /commands
 
@@ -39,7 +37,6 @@ Quase como uma filha, é um bot de propósitos gerais, chamada de Yui estou a de
 
 ### **Important Files**
 
-<br/>
 
 #### index.js
 
