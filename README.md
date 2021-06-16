@@ -1,8 +1,10 @@
-<p align="center"><img src=".github/app.gif" width="300px"  /></p>
+<p align="center"><img src=".github/app.gif" /></p>
 <h1 align="center">Yui</h1>
 
-<p align="justify" style="width: 550px; margin: 0 auto">
+<p align="justify">
 Quase como uma filha, é um bot de propósitos gerais, chamada de Yui estou a desenvolvendo para o discord com a biblioteca discord.js, o nome tem inspiração na personagem Yui do anime Sword Art Online que a princípio é uma I.A.</p>
+
+<br/>
 
 ## **Fluxo da aplicação**
 
