@@ -1,4 +1,4 @@
-<p align="center"><img src=".github/app.gif" width="350px" height="350px" style="border-radius: 50%; object-fit: cover;"/></p>
+<p align="center"><img src=".github/app.gif" width="300px"  /></p>
 <h1 align="center">Yui</h1>
 
 <p align="justify" style="width: 550px; margin: 0 auto">
