@@ -11,7 +11,7 @@ function execute(message, args) {
       )
       .catch(console.error);
   } else {
-    message.channel.send(`*Acha mesmo que vai limpar o chat plebeu?* 😂`);
+    message.author.send(`*Acha mesmo que vai limpar o chat plebeu?* 😂`);
   }
 }
 

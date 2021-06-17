@@ -1,5 +1,6 @@
 const search = require("./functions/search");
 const list = require("./functions/list");
+const img = require("./functions/img");
 
 function execute(message, args) {
   if (args[0] == "search") {
@@ -8,6 +9,10 @@ function execute(message, args) {
   }
   if (args == "list") {
     list(message);
+  }
+  if (args[0] == "img") {
+    args.shift();
+    img(message, args);
   }
 }
 
