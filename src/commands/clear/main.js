@@ -1,9 +1,9 @@
 require("dotenv").config();
 
-function execute(message) {
+function execute(message, args) {
   if (message.author.username === process.env.OWNER_USERNAME) {
     message.channel
-      .bulkDelete(100, true)
+      .bulkDelete(parseInt(args), true)
       .then((messages) =>
         message.channel.send(
           `***Foram deletadas ${messages.size} mensagens papa***`
