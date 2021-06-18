@@ -38,7 +38,7 @@ $ npm run dev
 
 <br/>
 
-## ❌ **Error Handling**
+## ❌ **Tratamento de erros**
 
 Para os consoles de erros darem certo, a estrutura de pastas tem que estar padronizada, para tal, basta seguir essas instruções:
 
