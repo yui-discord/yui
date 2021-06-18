@@ -21,6 +21,15 @@ module.exports = async (client, message) => {
 
     message.client.commands.get(command).execute(message, args);
   } catch (err) {
+    const args = message.content.slice(prefix.length).trim().split(/ +/);
+    console.error(`
+        ❌ ${err.toString()}
+        🦊 Input: '${message.content}'
+        ✨ Command: ${args[0]}
+        🔥 Function: ${args[1]}
+        🧅 Possible Path: /commands/${args[0]}/${args[1]}.js
+      `);
+    console.error(err);
     error.handler(err, message);
   }
 };

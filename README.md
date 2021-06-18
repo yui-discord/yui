@@ -38,6 +38,58 @@ $ npm run dev
 
 <br/>
 
+## ❌ **Error Handling**
+
+For the error consoles to work, the folder structure has to be standardized, just follow these instructions:
+
+- The command name must be the same as its folder name.
+
+  `/commands/${nameCommand}`
+
+  ```js
+  module.exports = {
+    name: `${nameCommand}`,
+    description: "Description Command",
+    execute,
+  };
+  ```
+
+- The name of the functions must be the same as the arguments passed after the command
+  - `> time ${args}`
+  - `/commands/time/functions/${args}.js`
+
+Example Output:
+
+```
+      ❌ TypeError: message.channel.sen is not a function
+      🦊 Input: '> time hours'
+      ✨ Command: time
+      🔥 Function: hours
+      🧅 Possible Path: /commands/time/hours.js
+```
+
+The code of catch Error:
+
+```js
+const error = require("../utils/handlers/errors/errors.handler");
+...
+
+catch (err) {
+  const args = message.content.slice(prefix.length).trim().split(/ +/);
+  console.error(`
+      ❌ ${err.toString()}
+      🦊 Input: '${message.content}'
+      ✨ Command: ${args[0]}
+      🔥 Function: ${args[1]}
+      🧅 Possible Path: /commands/${args[0]}/${args[1]}.js
+    `);
+  console.error(err);
+  error.handler(err, message);
+}
+```
+
+<br/>
+
 ## 🧬 **Application flow**
 
 ### **Directories**
@@ -49,6 +101,26 @@ $ npm run dev
 - Inside each folder has
   - main.js - Command settings
   - /functions - Inside this folder are the subcommands so to speak
+
+Code example
+
+```js
+// Imports
+
+const execute = (message, args) => {
+  try {
+    // The code to execute
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+module.exports = {
+  name: "Command's name",
+  description: "Description's command",
+  execute,
+};
+```
 
 #### /events
 

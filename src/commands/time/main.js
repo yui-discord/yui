@@ -1,10 +1,10 @@
-const getHours = require("./functions/getHours");
+const hours = require("./functions/hours");
 
-function execute(message, args) {
+const execute = (message, args) => {
   if (args == "hours") {
-    getHours(message);
+    hours(message);
   }
-}
+};
 
 module.exports = {
   name: "time",

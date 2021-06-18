@@ -38,6 +38,58 @@ $ npm run dev
 
 <br/>
 
+## ❌ **Error Handling**
+
+Para os consoles de erros darem certo, a estrutura de pastas tem que estar padronizada, para tal, basta seguir essas instruções:
+
+- O nome do comando deve ser o mesmo nome da pasta dele
+
+  `/commands/${nameCommand}`
+
+  ```js
+  module.exports = {
+    name: `${nameCommand}`,
+    description: "Descrição do comando",
+    execute,
+  };
+  ```
+
+- O nome das funções devem ser o mesmo dos argumentos passados depois do comando
+  - `> time ${args}`
+  - `/commands/time/functions/${args}.js`
+
+Exemplo de saída:
+
+```
+      ❌ TypeError: message.channel.sen is not a function
+      🦊 Input: '> time hours'
+      ✨ Command: time
+      🔥 Function: hours
+      🧅 Possible Path: /commands/time/hours.js
+```
+
+O código do catch Error:
+
+```js
+const error = require("../utils/handlers/errors/errors.handler");
+...
+
+catch (err) {
+  const args = message.content.slice(prefix.length).trim().split(/ +/);
+  console.error(`
+      ❌ ${err.toString()}
+      🦊 Input: '${message.content}'
+      ✨ Command: ${args[0]}
+      🔥 Function: ${args[1]}
+      🧅 Possible Path: /commands/${args[0]}/${args[1]}.js
+    `);
+  console.error(err);
+  error.handler(err, message);
+}
+```
+
+<br/>
+
 ## 🧬 **Fluxo da aplicação**
 
 ### **Diretórios**
@@ -49,6 +101,26 @@ $ npm run dev
 - Dentro de cada pasta tem
   - main.js - Configurações do comando
   - /functions - Dentro dessa pasta fica os subcomandos assim dizer
+
+Exemplo de código
+
+```js
+// Importações
+
+const execute = (message, args) => {
+  try {
+    // O código para ser executado
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+module.exports = {
+  name: "Nome do comando",
+  description: "Descrição do comando",
+  execute,
+};
+```
 
 #### /events
 
