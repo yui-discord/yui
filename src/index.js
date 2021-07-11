@@ -13,5 +13,7 @@
   eventsHandler(resolve(__dirname, "events"), client);
 
   console.log("> Autenticando-se com a API do Discord...☕");
-  client.login(process.env.BOT_TOKEN);
+  await client.login(process.env.BOT_TOKEN);
+
+  client.user.setActivity("[ > help ] ☕", { type: "LISTENING" });
 })();
