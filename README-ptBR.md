@@ -9,11 +9,9 @@ Quase como uma filha, é um bot de propósitos gerais, chamada de Yui estou a de
 
 ## 🤔 **Como usar no meu servidor?**
 
-❗❗❗ O bot ainda não foi hospedado então ninguém pode usar, apenas localmente
-
 - Adicione o bot clicando nesse <a href="https://discordapp.com/oauth2/authorize?=&client_id=849235155440238592&scope=bot&permissions=8">LINK</a>
   - Você precisa de permissões de administrador em algum server
-- Leia a documentação dos comandos <a href="#">AQUI</a>
+- Leia a documentação dos comandos <a href="https://miguelrisquelme.github.io/yui-website/">AQUI</a>
 - Só curtir 😁
 
 <br/>

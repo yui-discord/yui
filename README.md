@@ -9,11 +9,9 @@ Almost like a daughter, it's a general purpose bot, called Yui I'm developing fo
 
 ## 🤔 **How to use in my server?**
 
-❗❗❗ The bot ins't hosted so nobody can't use, just locally
-
 - Add the bot, just click in this <a href="https://discordapp.com/oauth2/authorize?=&client_id=849235155440238592&scope=bot&permissions=8">LINK</a>
   - You must be an administrator on some server
-- Read the Docs of commands <a href="#">HERE</a>
+- Read the Docs of commands <a href="https://miguelrisquelme.github.io/yui-website/">HERE</a>
 - Enjoy 😁
 
 <br/>
