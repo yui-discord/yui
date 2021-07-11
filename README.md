@@ -183,3 +183,4 @@ module.exports = {
 - <a target="_blank" href="https://discordjs.guide/popular-topics/faq.html#how-do-i-play-music-from-youtube">Play music from youtube</a>
 - <a target="_blank" href="https://stackoverflow.com/questions/60925319/i-am-getting-this-error-ffmpeg-avconv-not-found">Error: FFmpeg/avconv not found!</a>
 - <a target="_blank" href="https://stackoverflow.com/questions/50849678/reacting-to-embeds-with-discord-js">Reacting to embeds with discord.js</a>
+- <a target="_blank" href="https://waifu.pics/">API's Waifus</a>
