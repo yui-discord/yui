@@ -4,6 +4,8 @@ const prefix = process.env.PREFIX;
 module.exports = async (client, message) => {
   if (message.author.id === process.env.OWNER_ID) {
     message.userReference = process.env.OWNER_NAME;
+  } else if (message.author.id === process.env.OWNER2_ID) {
+    message.userReference = process.env.OWNER2_NAME;
   } else {
     message.userReference = message.member;
   }
@@ -21,14 +23,6 @@ module.exports = async (client, message) => {
 
     message.client.commands.get(command).execute(message, args);
   } catch (err) {
-    const args = message.content.slice(prefix.length).trim().split(/ +/);
-    console.error(`
-        ❌ ${err.toString()}
-        🦊 Input: '${message.content}'
-        ✨ Command: ${args[0]}
-        🔥 Function: ${args[1]}
-        🧅 Possible Path: /commands/${args[0]}/${args[1]}.js
-      `);
     console.error(err);
     error.handler(err, message);
   }

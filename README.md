@@ -11,7 +11,7 @@ Almost like a daughter, it's a general purpose bot, called Yui I'm developing fo
 
 - Add the bot, just click in this <a href="https://discordapp.com/oauth2/authorize?=&client_id=849235155440238592&scope=bot&permissions=8">LINK</a>
   - You must be an administrator on some server
-- Read the Docs of commands <a href="https://miguelrisquelme.github.io/yui-website/">HERE</a>
+- Read the Docs of commands <a href="https://yui-discord.github.io/yui-website/">HERE</a>
 - Enjoy 😁
 
 <br/>

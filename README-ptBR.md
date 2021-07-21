@@ -1,6 +1,6 @@
 <p align="center"><img src=".github/app.gif" /></p>
 <p align="center"><h1 align="center" >Yui</h1></p>
-<p align="center"><a href="https://github.com/miguelrisquelme/yui">English Version</a></p>
+<p align="center"><a href="https://github.com/yui-discord">English Version</a></p>
 
 <p align="justify">
 Quase como uma filha, é um bot de propósitos gerais, chamada de Yui estou a desenvolvendo para o discord com a biblioteca discord.js, o nome tem inspiração na personagem Yui do anime Sword Art Online que a princípio é uma I.A.</p>
@@ -11,7 +11,7 @@ Quase como uma filha, é um bot de propósitos gerais, chamada de Yui estou a de
 
 - Adicione o bot clicando nesse <a href="https://discordapp.com/oauth2/authorize?=&client_id=849235155440238592&scope=bot&permissions=8">LINK</a>
   - Você precisa de permissões de administrador em algum server
-- Leia a documentação dos comandos <a href="https://miguelrisquelme.github.io/yui-website/">AQUI</a>
+- Leia a documentação dos comandos <a href="https://yui-discord.github.io/yui-website/">AQUI</a>
 - Só curtir 😁
 
 <br/>

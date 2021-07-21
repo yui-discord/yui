@@ -8,6 +8,7 @@ module.exports = async (eventsDirectory, client) => {
 
   for (const file of eventFiles) {
     const eventName = parse(file).name;
+    console.log(eventName);
     const event = require(`${eventsDirectory}/${file}`);
     client.on(eventName, event.bind(null, client));
   }
